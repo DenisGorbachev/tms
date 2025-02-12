@@ -2,9 +2,9 @@
 //!
 //! ## Basics
 //!
-//! A task is defined as a function that returns a [`Result`].
+//! A task is defined as a function that returns a [`::std::result::Result`].
 //!
-//! In some cases, it may be convenient to return the [`Result`] from the `Builder` of a struct (represent the task with a struct).
+//! In some cases, it may be convenient to return the [`::std::result::Result`] from the `Builder` of a struct (represent the task with a struct).
 //!
 //! ## Tasks-as-types
 //!

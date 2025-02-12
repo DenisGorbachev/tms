@@ -2,6 +2,13 @@
 name = "tms"
 version = "0.1.0"
 edition = "2021"
+description = "A task management system that uses Rust functions to represent the tasks"
+license = "Apache-2.0 OR MIT"
+homepage = "https://github.com/DenisGorbachev/tms"
+repository = "https://github.com/DenisGorbachev/tms"
+readme = "README.md"
+keywords = ["task-management", "utils"]
+categories = ["development-tools"]
 
 [package.metadata.details]
 title = "Task management system"
