@@ -3,4 +3,10 @@ name = "tms"
 version = "0.1.0"
 edition = "2021"
 
+[package.metadata.details]
+title = "Task management system"
+tagline = ""
+summary = ""
+announcement = ""
+
 [dependencies]
