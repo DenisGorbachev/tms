@@ -16,9 +16,8 @@
 //! * A task with multiple dependencies is defined as `struct` (each dependency becomes a struct field).
 //! * A task with multiple ways to complete is defined as `enum` (each way to complete becomes an enum variant).
 //! * A task result is defined as a value of a Rust type.
-//! * A task result is produced by a [Builder](https://crates.io/crates/derive_builder).
+//! * A task result is produced by a [`Builder`](https://crates.io/crates/derive_builder).
 //! * If the builder returns an error, this error can be displayed to a human that should complete the task.
 
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+mod types;
+pub use types::*;
