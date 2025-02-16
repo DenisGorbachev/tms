@@ -32,14 +32,11 @@ In other words:
  [__link1]: https://doc.rust-lang.org/stable/std/?search=result::Result
  [__link2]: https://crates.io/crates/derive_builder
 
-
 ## Installation
 
 ```shell
-cargo add tms url
+cargo add tms
 ```
-
-**Important:** add the `url` crate too.
 
 ## Gratitude
 
