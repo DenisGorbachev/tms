@@ -5,15 +5,15 @@ macro_rules! subtype_vec_impl_all {
         $vis:vis struct $name:ident<T>(Vec<T>)
         $(where [$($where_clause:tt)*])?$(;)?
     ) => {
-        subtype_vec_def!(
+        $crate::subtype_vec_def!(
             $(#[$meta])*
             $vis struct $name<T>(Vec<T>)
             $(where [$($where_clause)*])?;
         );
-        subtype_vec_impl_self!($name);
-        subtype_vec_impl_extend!($name);
-        subtype_vec_impl_into_iter_own!($name);
-        subtype_vec_impl_into_iter_ref!($name);
+        $crate::subtype_vec_impl_self!($name);
+        $crate::subtype_vec_impl_extend!($name);
+        $crate::subtype_vec_impl_into_iter_own!($name);
+        $crate::subtype_vec_impl_into_iter_ref!($name);
     };
 }
 
@@ -95,7 +95,7 @@ macro_rules! subtype_vec_impl_into_iter_ref {
 macro_rules! subtype_vec_impl_from {
     ($name:ident, $value:ty, [$($value_source:ty),+]) => {
         $(
-            subtype_vec_impl_from!($name, $value, $value_source);
+            $crate::subtype_vec_impl_from!($name, $value, $value_source);
         )+
     };
     ($name:ident, $value:ty, $value_source:ty) => {
