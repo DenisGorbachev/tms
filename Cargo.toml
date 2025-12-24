@@ -20,7 +20,7 @@ readme = { generate = false }
 #derive-getters = { version = "0.5.0", features = ["auto_copy_getters"] }
 #derive-new = "0.7.0"
 #derive_builder = "0.20.0"
-derive_more = { version = "2.1.0", features = ["full"] }
+derive_more = { version = "2", features = ["full"] }
 #fmt-derive = "0.1.2"
 #helpful = { git = "https://github.com/DenisGorbachev/helpful" }
 subtype = { git = "https://github.com/DenisGorbachev/subtype" }
