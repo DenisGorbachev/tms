@@ -19,6 +19,9 @@
 //! * A task result is produced by a [`Builder`](https://crates.io/crates/derive_builder).
 //! * If the builder returns an error, this error can be displayed to a human that should complete the task.
 
+#![deny(clippy::arithmetic_side_effects)]
+#![cfg_attr(not(test), deny(unused_crate_dependencies))]
+
 mod types;
 pub use types::*;
 mod traits;
