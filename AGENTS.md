@@ -589,6 +589,14 @@ TODO:
 
 - Define other variants
 
+##### struct Messages
+
+- Must have methods:
+  - `insert`
+  - `update`
+- Must pass requirements:
+  - Every mutator that modifies `Message::dependencies` must validate that there are no cycles
+
 ### Project files
 
 #### Cargo.toml
