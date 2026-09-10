@@ -471,7 +471,10 @@ A function marked with `#[test]` or `#[tokio::test]`.
     - Then:
       - Run `cargo add {dependency}@{version}`
         - `{version}` patch component must be 0
-      - Run `cargo update -p {dependency} --precise {version}` to lock that exact version
+      - Try `cargo update -p {dependency} --precise {version}` to lock that exact version
+        - If dependency constraints prevent locking that version:
+          - Keep the version resolved by Cargo
+          - Add a comment in Cargo.toml explaining the constraints
     - Else:
       - Run `cargo add {dependency}` without `{version}`
 - When adding a dependency in a workspace:
