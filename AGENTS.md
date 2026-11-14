@@ -839,6 +839,9 @@ name = "tms"
 title = "Task management system"
 readme = { generate = false }
 
+[workspace.lints.cargo]
+unused_dependencies = "deny"
+
 [workspace.lints.rust]
 redundant_imports = "deny"
 unused_import_braces = "deny"
@@ -906,7 +909,6 @@ ignored = ["derive_more"]
 //! * If the builder returns an error, this error can be displayed to a human that should complete the task.
 
 #![deny(clippy::arithmetic_side_effects)]
-#![cfg_attr(not(test), deny(unused_crate_dependencies))]
 
 mod types;
 pub use types::*;
